@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AutoParts AI Simulation</title>
+</head>
+<body>
+    <h1>Live Simulation Dashboard</h1>
+    <h2>Real-time Data Streams</h2>
+    <ul>
+        <li><a href="https://webhook.site/#!/https://webhook.site/e376b74d-9cd6-45f4-a6b6-a2359ee5d74a" target="_blank">Scheduler API Live Logs</a></li>
+        <li><a href="https://webhook.site/#!/https://webhook.site/88d3f9f0-598d-44b4-9f77-94f84688d722
+" target="_blank">CMMS API Live Logs</a></li>
+    </ul>
+    <h2>Test the Workflow</h2>
+    <button onclick="testAPI()">Send Test Alert</button>
+    <pre id="output"></pre>
+    
+    <script>
+    async function testAPI() {
+        const response = await fetch('https://webhook.site/token/https://webhook.site/e376b74d-9cd6-45f4-a6b6-a2359ee5d74a', {
+            method: 'POST',
+            headers: {'Content-Type': 'application/json'},
+            body: JSON.stringify({test: true, timestamp: new Date().toISOString()})
+        });
+        document.getElementById('output').textContent = 'Test sent! Check webhook.site';
+    }
+    </script>
+</body>
+</html>
